@@ -19,6 +19,13 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: 拉取脚本与配置
+        run: |
+          mkdir -p scripts
+          curl -fsSL -m60 -o scripts/grab.py "http://8.163.91.17/tvbox/grab.py"
+          curl -fsSL -m60 -o sites.json "http://8.163.91.17/tvbox/sites.json"
+          python -c "import ast;ast.parse(open('scripts/grab.py',encoding='utf-8').read());print('script syntax OK')"
+
       - name: 安装依赖
         run: |
           pip install --quiet playwright requests
@@ -28,15 +35,18 @@ jobs:
         run: python scripts/grab.py
 
       - name: 上传结果
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: result
           path: result.json
+          if-no-files-found: warn
 
       - name: 提交结果
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add result.json
-          git diff --cached --quiet || git commit -m "update result.json $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push   
+          git add -f result.json
+          git diff --cached --quiet || git commit -m "update result.json"
+          git push
