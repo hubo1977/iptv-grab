@@ -1,49 +1,48 @@
-名称: grab-live
+name: grab-live
 
-:
-排程:
+on:
+  schedule:
     - cron: "0 */6 * * *"
-workflow_dispatch：
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-抓取:
-运行环境: ubuntu-latest
-超时分钟数: 20
-步骤:
+  grab:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
-带有:
-python版本: "3.12"
+        with:
+          python-version: "3.12"
 
-      - 名称: 拉取脚本与配置
-运行: |
+      - name: 获取脚本
+        run: |
           mkdir -p scripts
           curl -fsSL -m60 -o scripts/grab.py "http://8.163.91.17/tvbox/grab.py"
           curl -fsSL -m60 -o sites.json "http://8.163.91.17/tvbox/sites.json"
-"import ast;ast.parse(open('scripts/grab.py',encoding='utf-8').read());print('脚本语法正确')"
 
-      - 名称: 安装依赖
-运行: |
+      - name: 安装依赖
+        run: |
           pip install --quiet playwright requests
           python -m playwright install --with-deps chromium
 
-      - 名称: 抓取
-运行：python scripts/grab.py
+      - name: 抓取
+        run: python scripts/grab.py
 
-      - 名称: 上传结果
-始终()
-使用: actions/upload-artifact@v4
-带有：
-名称: result
-路径: result.json
-          if-no-files-found: 警告
+      - name: 上传结果
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: result
+          path: result.json
+          if-no-files-found: warn
 
       - name: 提交结果
-如果始终()
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
