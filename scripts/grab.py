@@ -128,6 +128,24 @@ def main():
                 entry["pages"].append({"url": u, "title": title, "hits": uniq})
                 for x in uniq:
                     found.add(x)
-            for u in sorted(found):
-                ok, info = check_m3u8(u, site.get("home"))
-                print("    校验 %-6s %s  %s" % ("OK" if ok else "FAI 
+                            print("    校验 %-6s %s  %s" % ("OK" if ok else "FAIL", info, u[:100]))
+                item = {"site": site["name"], "url": u, "referer": site.get("home"),
+                        "ok": ok, "info": info}
+                entry["streams"].append(item)
+                result["candidates"].append(item)
+                if ok:
+                    result["verified"].append(item)
+            result["sites"].append(entry)
+        browser.close()
+
+    out = os.path.join(ROOT, "result.json")
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    print("\n══ 全量候选 %d，通过校验 %d" % (len(result["candidates"]), len(result["verified"])))
+    for v in result["verified"]:
+        print("  ✓ %s  %s" % (v["info"], v["url"][:110]))
+    print("写出 %s" % out)
+
+
+if __name__ == "__main__":
+    main()
