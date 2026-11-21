@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21 06:31:35",
+  "generated_at": "2026-11-21 18:56:15",
   "sites": [
     {
       "name": "中国蓝TV（浙江）",
@@ -8,9 +8,7 @@
           "url": "https://www.cztv.com/liveTV",
           "title": "直播-电视--新蓝网",
           "hits": [
-            "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242705-ded5bde01c324224b9f687afd0df3e75-0-a9ded2eef0a6fb5b40c97ecf5524ed3b",
-            "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242714-ded5bde01c324224b9f687afd0df3e75-0-522f3961a3d7ecd3780048a93bfab061",
-            "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242722-ded5bde01c324224b9f687afd0df3e75-0-c3332efdcb4786f124419c6050587fd5"
+            "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795287381-a6bc6da7a23e484187276e6ae1202eda-0-0b166b75f92d519184101f1b95384f92"
           ]
         },
         {
@@ -27,24 +25,10 @@
       "streams": [
         {
           "site": "中国蓝TV（浙江）",
-          "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242705-ded5bde01c324224b9f687afd0df3e75-0-a9ded2eef0a6fb5b40c97ecf5524ed3b",
+          "url": "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795287381-a6bc6da7a23e484187276e6ae1202eda-0-0b166b75f92d519184101f1b95384f92",
           "referer": "https://www.cztv.com/",
           "ok": true,
-          "info": "TS 1393 KB"
-        },
-        {
-          "site": "中国蓝TV（浙江）",
-          "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242714-ded5bde01c324224b9f687afd0df3e75-0-522f3961a3d7ecd3780048a93bfab061",
-          "referer": "https://www.cztv.com/",
-          "ok": true,
-          "info": "TS 1393 KB"
-        },
-        {
-          "site": "中国蓝TV（浙江）",
-          "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242722-ded5bde01c324224b9f687afd0df3e75-0-c3332efdcb4786f124419c6050587fd5",
-          "referer": "https://www.cztv.com/",
-          "ok": true,
-          "info": "TS 1393 KB"
+          "info": "TS 1543 KB"
         }
       ]
     }
@@ -52,47 +36,19 @@
   "verified": [
     {
       "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242705-ded5bde01c324224b9f687afd0df3e75-0-a9ded2eef0a6fb5b40c97ecf5524ed3b",
+      "url": "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795287381-a6bc6da7a23e484187276e6ae1202eda-0-0b166b75f92d519184101f1b95384f92",
       "referer": "https://www.cztv.com/",
       "ok": true,
-      "info": "TS 1393 KB"
-    },
-    {
-      "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242714-ded5bde01c324224b9f687afd0df3e75-0-522f3961a3d7ecd3780048a93bfab061",
-      "referer": "https://www.cztv.com/",
-      "ok": true,
-      "info": "TS 1393 KB"
-    },
-    {
-      "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242722-ded5bde01c324224b9f687afd0df3e75-0-c3332efdcb4786f124419c6050587fd5",
-      "referer": "https://www.cztv.com/",
-      "ok": true,
-      "info": "TS 1393 KB"
+      "info": "TS 1543 KB"
     }
   ],
   "candidates": [
     {
       "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242705-ded5bde01c324224b9f687afd0df3e75-0-a9ded2eef0a6fb5b40c97ecf5524ed3b",
+      "url": "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795287381-a6bc6da7a23e484187276e6ae1202eda-0-0b166b75f92d519184101f1b95384f92",
       "referer": "https://www.cztv.com/",
       "ok": true,
-      "info": "TS 1393 KB"
-    },
-    {
-      "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242714-ded5bde01c324224b9f687afd0df3e75-0-522f3961a3d7ecd3780048a93bfab061",
-      "referer": "https://www.cztv.com/",
-      "ok": true,
-      "info": "TS 1393 KB"
-    },
-    {
-      "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795242722-ded5bde01c324224b9f687afd0df3e75-0-c3332efdcb4786f124419c6050587fd5",
-      "referer": "https://www.cztv.com/",
-      "ok": true,
-      "info": "TS 1393 KB"
+      "info": "TS 1543 KB"
     }
   ]
 }
