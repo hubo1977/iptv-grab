@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23 06:51:40",
+  "generated_at": "2026-11-23 23:39:44",
   "sites": [
     {
       "name": "中国蓝TV（浙江）",
@@ -8,8 +8,7 @@
           "url": "https://www.cztv.com/liveTV",
           "title": "直播-电视--新蓝网",
           "hits": [
-            "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416710-928b652c8e4848bda3758ce0533423ed-0-13cc0873aadd7b0656be2e977c80ab34",
-            "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416719-928b652c8e4848bda3758ce0533423ed-0-40a15b77d8316484bc69e080bf345496"
+            "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795477190-f2efc5bbbfd24125b4dfdba276f72da7-0-42d1cd3338c28fe86884e90df8a40957"
           ]
         },
         {
@@ -26,17 +25,10 @@
       "streams": [
         {
           "site": "中国蓝TV（浙江）",
-          "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416710-928b652c8e4848bda3758ce0533423ed-0-13cc0873aadd7b0656be2e977c80ab34",
+          "url": "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795477190-f2efc5bbbfd24125b4dfdba276f72da7-0-42d1cd3338c28fe86884e90df8a40957",
           "referer": "https://www.cztv.com/",
           "ok": true,
-          "info": "TS 1948 KB"
-        },
-        {
-          "site": "中国蓝TV（浙江）",
-          "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416719-928b652c8e4848bda3758ce0533423ed-0-40a15b77d8316484bc69e080bf345496",
-          "referer": "https://www.cztv.com/",
-          "ok": true,
-          "info": "TS 1948 KB"
+          "info": "TS 1339 KB"
         }
       ]
     }
@@ -44,33 +36,19 @@
   "verified": [
     {
       "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416710-928b652c8e4848bda3758ce0533423ed-0-13cc0873aadd7b0656be2e977c80ab34",
+      "url": "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795477190-f2efc5bbbfd24125b4dfdba276f72da7-0-42d1cd3338c28fe86884e90df8a40957",
       "referer": "https://www.cztv.com/",
       "ok": true,
-      "info": "TS 1948 KB"
-    },
-    {
-      "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416719-928b652c8e4848bda3758ce0533423ed-0-40a15b77d8316484bc69e080bf345496",
-      "referer": "https://www.cztv.com/",
-      "ok": true,
-      "info": "TS 1948 KB"
+      "info": "TS 1339 KB"
     }
   ],
   "candidates": [
     {
       "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416710-928b652c8e4848bda3758ce0533423ed-0-13cc0873aadd7b0656be2e977c80ab34",
+      "url": "https://zwebl06.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795477190-f2efc5bbbfd24125b4dfdba276f72da7-0-42d1cd3338c28fe86884e90df8a40957",
       "referer": "https://www.cztv.com/",
       "ok": true,
-      "info": "TS 1948 KB"
-    },
-    {
-      "site": "中国蓝TV（浙江）",
-      "url": "https://zwebl04.cztv.com/live/channel01720Pnew.m3u8?auth_key=1795416719-928b652c8e4848bda3758ce0533423ed-0-40a15b77d8316484bc69e080bf345496",
-      "referer": "https://www.cztv.com/",
-      "ok": true,
-      "info": "TS 1948 KB"
+      "info": "TS 1339 KB"
     }
   ]
 }
